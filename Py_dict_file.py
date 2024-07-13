@@ -15,7 +15,10 @@ for mail in lst:
     
 big_val = max(count.values())
 
-key = {i for i in count if count[i] == big_val}
+#key = {i for i in count if count[i] == big_val}
 
-for finalmail in key:
-    print(finalmail, big_val)
+for i in count:
+     if count[i] == big_val:
+          key = i
+          
+print(key, big_val)
