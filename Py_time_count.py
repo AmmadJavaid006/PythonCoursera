@@ -11,10 +11,7 @@ for line in fhandle:
 for hour in lst:
     hour = hour.split(":")
     finallist.append(hour[0])
-
-for ftime in finallist:
-    count[ftime] = count.get(ftime, 0) + 1
-
+    count[hour[0]] = count.get(hour[0], 0) + 1
 
 for x, y in sorted(count.items()):
     print(x, y)
